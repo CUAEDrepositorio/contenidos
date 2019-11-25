@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Contenedor Acordeón</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+		.xs-text{
+			font-size: 60%;
+			text-align: center;
+		}
+		.btn{
+			background-color:#f5F5f5;
+			border-color:#DDD;
+			color:#000;
+			float:right;
+			padding:0px;
+			border-style: none;
+		}
+		.btn:after {
+			font-family: "Glyphicons Halflings";
+			content: "\e113";
+			float: right;
+			margin-left: 15px;
+		}
+		/* Icon when the collapsible content is hidden */
+		.btn.collapsed:after {
+			content: "\e114";
+		}
+		@media (max-width: 480px) {
+    .body {
+        font-size: 100%;
+    }
+		h4{
+			font-size: 175%;
+		}
+		#accordion{
+			font-size: 85%;
+		}
+		a{
+			font-size: 85%;
+		}
+		.panel-heading{
+			padding: 10px 10px;
+		}
+}
+	</style>
+</head>
+
+<body>
+<div style="margin:20px">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Lorem ipsum dolor
+						<span class="btn collapsed" data-toggle="collapse" data-target="#collapse1" data-parent="#accordion" aria-expanded="true"></span>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+							<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, </p>
+							<div>
+								<img src="img/imagen1.jpg" width="100%" height="auto" class="img-responsive" style="max-width:500px; margin-left:auto; margin-right:auto"><br>
+								<span class="xs-text">(s. a.) <em>Cirugía y los residentes, Universidad de Washington</em> [fotografía] (2008).<br>
+								Tomada de <a href="https://en.wikipedia.org/wiki/File:UW_surgery_and_residents.jpg#/media/File:UW_surgery_and_residents.jpg" target="_blank">https://en.wikipedia.org/wiki/File:UW_surgery_and_residents.jpg#/media/File:UW_surgery_and_residents.jpg</a>.</span>
+							</div>
+							<br />
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Nulla consequat
+						<span class="btn collapsed" data-toggle="collapse" data-target="#collapse2" data-parent="#accordion"></span>
+					</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+							<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, </p>
+							<div>
+								<img src="img/imagen2.jpg" width="100%" height="auto" class="img-responsive" style="max-width:500px;margin-left:auto; margin-right:auto" /><br>
+								<span class="xs-text">ReSurge International. (2005). Uso de prendas de compresión (máscara de la cara) para controlar la formación de cicatrices [fotografía]. <br>
+								Tomada de <a href="https://flic.kr/p/2pTCb" target="_blank">https://flic.kr/p/2pTCb</a></span>
+							</div>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Lorem ipsum dolor
+						<span class="btn collapsed" data-toggle="collapse" data-target="#collapse3" data-parent="#accordion"></span>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+							<p>La silicona se puede encontrar en gel o en láminas que se aplican por lapsos de 18 horas durante al menos tres meses. Se aduce que logra aplanar y mejorar la elasticidad de la piel afectada, al proveer de un ambiente oclusivo húmedo y el desarrollo de fuerzas electroestáticas.</p>
+							<div>
+								<img src="img/imagen3.jpg" width="100%" height="auto" class="img-responsive" style="max-width:500px;margin-left:auto; margin-right:auto"><br>
+								<span class="xs-text">ReSurge International. (2005). Inserciones de silicona en gel y separadores Web para el estiramiento y tratamiento de cicatrices [fotografía]. <br>
+								Tomada de <a href="https://flic.kr/p/2pQMA" target="_blank">https://flic.kr/p/2pQMA</a>.</span>
+							</div>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div> 
+</div>
+    
+</body>
+</html>
